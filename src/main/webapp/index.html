@@ -1,0 +1,53 @@
+
+<!-- ng-app matches the name of the app we have given in app.js -->
+<html ng-app="HelloWorldApp">
+
+<head>
+
+    <!--<link rel="stylesheet" type="text/css" href="bower_components/angular-ui-grid/ui-grid.min.css"></link>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Import the angular library, the more depenancies then the more you will import here -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+
+
+    <!-- Import bootstrap for some easy styling
+         Can download using bower, but if available via a CDN then I prefer that
+         Bootstrap requires jQuery
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <!-- Import your actual app along with controllers, services etc -->
+    <script src="angular/app.js" type="text/javascript"></script>
+    <script src="angular/controller/HelloWorldController.js" type="text/javascript"></script>
+</head>
+
+
+
+<!-- You can add the controller at body of div level, if being used for all the one page, then add in body -->
+<body ng-controller="HelloWorldController">
+
+    <div>
+        <div class = "row" align="center">
+            <h1>
+                <button type="button" class="btn btn-primary" ng-click="getGreeting()">Get Greeting</button>
+            </h1>
+        </div>
+
+        <div class = "row" align="center">
+            <h1>
+                <button type="button" class="btn btn-secondary" ng-click="clear()">Change</button>
+            </h1>
+        </div>
+
+        <div class="row" align="center">
+            Greeting = {{greetingMessage}}
+        </div>
+
+    </div>
+
+
+</body>
