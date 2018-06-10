@@ -25,6 +25,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.github.ulisesbocchio</groupId>
+            <artifactId>jasypt-spring-boot-starter</artifactId>
+            <version>1.17</version>
+        </dependency>
+
+
         <!-- end::actuator[] -->
         <!-- tag::tests[] -->
         <dependency>

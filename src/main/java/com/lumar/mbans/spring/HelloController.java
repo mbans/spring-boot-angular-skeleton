@@ -1,5 +1,7 @@
 package com.lumar.mbans.spring;
 
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,7 +11,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-public class HelloController {
+public class HelloController implements InitializingBean{
+
+    @Value("${test.property:}")
+    private String testProperty;
+
+    @Value("${db.password:password}")
+    private String dbPwd;
 
     @RequestMapping(value="/greeting")
     public ResponseEntity<?> index() {
@@ -19,4 +27,8 @@ public class HelloController {
         return new ResponseEntity(message, HttpStatus.OK);
     }
 
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        System.out.println("testProperty=" + testProperty + ", " +dbPwd);
+    }
 }

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.lumar.mbans.spring.HelloControllerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.549 sec - in com.lumar.mbans.spring.HelloControllerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.085 sec - in com.lumar.mbans.spring.HelloControllerTest

@@ -1,4 +1,4 @@
-var helloWorldApp = angular.module('HelloWorldApp', []);
+var helloWorldApp = angular.module('HelloWorldApp', ['ngCookies']);
 
 //Define Global stuff within here
 var HELLO_WORLD_BASE_URL = "http://localhost:8080";
@@ -10,3 +10,4 @@ var HELLO_WORLD_BASE_URL = "http://localhost:8080";
 //        //I prefer to define with own file, see controller/HelloWorldController.js
 //    };
 //);
+
