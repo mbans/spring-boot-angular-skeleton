@@ -1,6 +1,6 @@
 //define your dependancies for your controller
 
-helloWorldApp.controller('HelloWorldController', ['$scope', '$http', '$cookies', '$window',
+helloWorldApp.controller('HelloWorldController', ['$scope', '$http', '$cookies', '$window'
     //Inject your dependancies into your controller function. These are now in scope for use in your cntroller
     function($scope, $http, $cookies, $window) {
 
@@ -21,8 +21,6 @@ helloWorldApp.controller('HelloWorldController', ['$scope', '$http', '$cookies',
 //                $cookies.remove("n Name");
                 localStorage.removeItem("Name");
             };
-
-
 
 
 

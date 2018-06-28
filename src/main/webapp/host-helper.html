@@ -12,10 +12,16 @@
     <!--<link rel="stylesheet" type="text/css" href="bower_components/angular-ui-grid/ui-grid.min.css"></link>-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Import the angular library, the more depenancies then the more you will import here -->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-cookies.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-select/0.16.1/select.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-select/0.16.1/select.min.css" rel="stylesheet" media="screen">
 
 
     <!-- Import your actual app along with controllers, services etc -->
@@ -26,28 +32,68 @@
 <!-- You can add the controller at body of div level, if being used for all the one page, then add in body -->
 <body ng-controller="HelloWorldController">
 
-    <div class="container">
 
-        <div class="row bg-dark">Hello</div>
+    § <div class="container">
+        <!--<h2>Edit Glyph</h2>-->
+        <!--<p>Edit icon: <span class="glyphicon glyphicon-edit"></span></p>-->
+        <!--<p>Edit icon as a link:-->
+            <!--<a href="#">-->
+                <!--<span class="glyphicon glyphicon-edit"></span>-->
+            <!--</a>-->
+        <!--</p>-->
+        <!--<p>Edit icon on a button:-->
+            <!--<button type="button" class="btn btn-default btn-sm">-->
+                <!--<span class="glyphicon glyphicon-edit"></span> Edit-->
+            <!--</button>-->
+        <!--</p>-->
+        <!--<p>Edit icon on a styled link button:-->
+            <!--<a href="#" class="btn btn-info btn-lg">-->
+                <!--<span class="glyphicon glyphicon-edit"></span> Edit-->
+            <!--</a>-->
+        <!--</p>-->
+        <p>Plus-sign icon as a link:
+            <a href="#">
+                <span class="glyphicon glyphicon-plus-sign"></span>
+            </a>
+            <a href="#">
+                <span class="glyphicon glyphicon-minus-sign"></span>
+            </a>
 
-        <div class="p-3 mb-2 bg-danger text-white">
-            [div class="p-3 mb-2 bg-danger text-white"]
+            <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+        </p>
+    </div>
+
+
+    <!-- Modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Directory Config</h4>
+                </div>
+                <div class="modal-body">
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
         </div>
     </div>
 
-<!--<footer class="bd-footer">-->
-<!--<div class="container">-->
-<!--A Footer-->
-<!--</div>-->
-<!--</footer>-->
 
-<!-- Import bootstrap for some easy styling
- Can download using bower, but if available via a CDN then I prefer that
- Bootstrap requires jQuery
--->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
 
 
 </body>
